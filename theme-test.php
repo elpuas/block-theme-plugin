@@ -16,15 +16,25 @@
 
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit;
 }
 
+/**
+ * Class ThemeTestPlugin
+ *
+ * This class represents the main plugin file for the Theme Test plugin.
+ * It handles the loading of dependencies and includes necessary files.
+ */
 class ThemeTestPlugin {
 
 	public function __construct() {
 		$this->load_dependencies();
 	}
 
+	/**
+	 * Load the plugin dependencies.
+	 * This method includes the required files for the plugin to function properly.
+	 */
 	private function load_dependencies() {
 		require_once __DIR__ . '/theme-config/theme-json-default.php';
 		require_once __DIR__ . '/inc/register-blocks.php';

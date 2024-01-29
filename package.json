@@ -18,6 +18,23 @@
 		"build:dynamic": "wp-scripts build --webpack-src-dir=blocks/dynamic/"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^27.1.0"
+		"@wordpress/scripts": "^27.1.0",
+		"autoprefixer": "^10.4.17",
+		"cssnano": "^6.0.3",
+		"postcss": "^8.4.33",
+		"postcss-import": "^16.0.0",
+		"postcss-import-ext-glob": "^2.1.1",
+		"postcss-mixins": "^9.0.4",
+		"postcss-nested": "^6.0.1"
+	},
+	"postcss": {
+		"plugins": {
+			"postcss-import-ext-glob": {},
+			"postcss-import": {},
+			"postcss-nested": {},
+			"postcss-mixins": {},
+			"autoprefixer": {},
+			"cssnano": {}
+		}
 	}
 }

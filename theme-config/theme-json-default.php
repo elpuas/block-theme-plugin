@@ -26,7 +26,7 @@ class ThemeJSONHandler {
 		}
 	}
 
-	public function filter_theme_json_theme($theme_json) {
+	public function filter_theme_json_theme( $theme_json ) {
 		$new_data = [
 			'version' => 2,
 			'settings' => [
