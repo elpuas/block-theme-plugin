@@ -14,8 +14,8 @@
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start --webpack-copy-php",
-		"start:dynamic": "wp-scripts start --webpack-src-dir=blocks/dynamic/",
-		"build:dynamic": "wp-scripts build --webpack-src-dir=blocks/dynamic/"
+		"start:dynamic": "wp-scripts start --webpack-src-dir=blocks/dynamic/ --webpack-copy-php",
+		"build:dynamic": "wp-scripts build --webpack-src-dir=blocks/dynamic/ --webpack-copy-php"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^27.1.0",
