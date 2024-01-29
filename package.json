@@ -1,0 +1,23 @@
+{
+	"name": "theme-test",
+	"version": "0.1.0",
+	"description": "Later",
+	"author": "elpuas",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/elpuas",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php",
+		"start:dynamic": "wp-scripts start --webpack-src-dir=blocks/dynamic/",
+		"build:dynamic": "wp-scripts build --webpack-src-dir=blocks/dynamic/"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^27.1.0"
+	}
+}
