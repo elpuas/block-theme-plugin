@@ -3,6 +3,9 @@
  * Theme.json modifications
  *
  * @package theme-test
+ *
+ * @link https://developer.wordpress.org/news/2023/07/05/how-to-modify-theme-json-data-using-server-side-filters/
+ * @link https://developer.wordpress.org/reference/hooks/wp_theme_json_data_theme/
  */
 
 /**
@@ -25,28 +28,27 @@ class ThemeJSONHandler {
 
 	public function filter_theme_json_theme($theme_json) {
 		$new_data = [
-            'version' => 2,
-            'settings' => [
-                'color' => [
-                    'text' => false,
-                    'palette' => [
-                        [
-                            'slug'  => 'base',
-                            'color' => 'white',
-                            'name'  => esc_html_x( 'Base', 'theme-test' ),
-                        ],
-                        [
-                            'slug'  => 'contrast',
-                            'color' => 'black',
-                            'name'  => esc_html_x( 'Contrast', 'theme-test' ),
-                        ],
-                    ],
-                ],
-            ],
-        ];
+			'version' => 2,
+			'settings' => [
+				'color' => [
+					'text' => false,
+					'palette' => [
+						[
+							'slug'  => 'base',
+							'color' => 'white',
+							'name'  => esc_html_x( 'Base', 'theme-test' ),
+						],
+						[
+							'slug'  => 'contrast',
+							'color' => 'black',
+							'name'  => esc_html_x( 'Contrast', 'theme-test' ),
+						],
+					],
+				],
+			],
+		];
 		return $theme_json->update_with($new_data);
 	}
 }
 
 $theme_json_handler = new ThemeJSONHandler();
-
