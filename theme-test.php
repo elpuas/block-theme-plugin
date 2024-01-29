@@ -19,6 +19,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-require_once __DIR__ . '/theme-config/theme-json-default.php';
-require_once __DIR__ . '/inc/register-blocks.php';
-require_once __DIR__ . '/inc/register-patterns.php';
+class ThemeTestPlugin {
+
+	public function __construct() {
+		$this->load_dependencies();
+	}
+
+	private function load_dependencies() {
+		require_once __DIR__ . '/theme-config/theme-json-default.php';
+		require_once __DIR__ . '/inc/register-blocks.php';
+		require_once __DIR__ . '/inc/register-patterns.php';
+	}
+}
+
+$theme_test_plugin = new ThemeTestPlugin();
