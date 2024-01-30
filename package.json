@@ -7,13 +7,14 @@
 	"homepage": "https://github.com/elpuas",
 	"main": "build/index.js",
 	"scripts": {
-		"build": "wp-scripts build --webpack-copy-php",
+		"start:dynamic": "wp-scripts start --webpack-src-dir=blocks/dynamic/ --webpack-copy-php",
+		"start:assets": "wp-scripts start --webpack-copy-php",
+		"build": "wp-scripts build && npm run build:dynamic --webpack-copy-php",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
-		"start:dynamic": "wp-scripts start --webpack-src-dir=blocks/dynamic/ --webpack-copy-php",
 		"build:dynamic": "wp-scripts build --webpack-src-dir=blocks/dynamic/ --webpack-copy-php"
 	},
 	"devDependencies": {
@@ -24,16 +25,37 @@
 		"postcss-import": "^16.0.0",
 		"postcss-import-ext-glob": "^2.1.1",
 		"postcss-mixins": "^9.0.4",
-		"postcss-nested": "^6.0.1"
+		"postcss-nested": "^6.0.1",
+		"postcss-preset-env": "^9.3.0"
 	},
 	"postcss": {
 		"plugins": {
-			"postcss-import-ext-glob": {},
-			"postcss-import": {},
-			"postcss-nested": {},
+			"postcss-import-ext-glob": {
+				"exts": [
+					".css",
+					".scss",
+					".sass"
+				]
+			},
+			"postcss-import": {
+				"path": [
+					"node_modules"
+				]
+			},
+			"postcss-nested": {
+				"bubble": [
+					"screen"
+				]
+			},
 			"postcss-mixins": {},
-			"autoprefixer": {},
+			"autoprefixer": {
+				"grid": true
+			},
+			"postcss-preset-env": {
+				"stage": 0
+			},
 			"cssnano": {}
+
 		}
 	}
 }
