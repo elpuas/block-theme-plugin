@@ -2,7 +2,7 @@
 /**
 * Registers the block using the metadata loaded from the `block.json` file.
 *
-* @package theme-test
+* @package blockcraft
 */
 
 class BlockRegistrar {

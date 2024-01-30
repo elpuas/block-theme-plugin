@@ -1,5 +1,5 @@
 {
-	"name": "theme-test",
+	"name": "blockcraft",
 	"version": "0.1.0",
 	"description": "Later",
 	"author": "elpuas",
@@ -13,7 +13,6 @@
 		"lint:js": "wp-scripts lint-js",
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
-		"start": "wp-scripts start --webpack-copy-php",
 		"start:dynamic": "wp-scripts start --webpack-src-dir=blocks/dynamic/ --webpack-copy-php",
 		"build:dynamic": "wp-scripts build --webpack-src-dir=blocks/dynamic/ --webpack-copy-php"
 	},

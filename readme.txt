@@ -16,7 +16,7 @@ Perfect for theme developers and users looking to extend the capabilities of the
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/theme-test` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/blockcraft` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 
 == Frequently Asked Questions ==

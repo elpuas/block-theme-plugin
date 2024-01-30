@@ -2,7 +2,7 @@
 /**
  * Register Patterns and Pattern Category
  *
- * @package theme-test
+ * @package blockcraft
  */
 
 /**
@@ -29,7 +29,7 @@ class PatternRegistrar {
 	 */
 	public function register_custom_pattern_category() {
 		register_block_pattern_category(
-			'theme-test-category',
+			'blockcraft-category',
 			array('label' => 'Theme Test Category')
 		);
 	}
@@ -38,15 +38,15 @@ class PatternRegistrar {
 	 * Register pattern example.
 	 *
 	 * Registers a custom block pattern with the title 'Pattern Example', description 'Description of your custom pattern',
-	 * category 'theme-test-category', and content from the 'patterns/pattern-example.php' file.
+	 * category 'blockcraft-category', and content from the 'patterns/pattern-example.php' file.
 	 */
 	public function register_pattern_example() {
 		register_block_pattern(
-			'theme-test/pattern-example',
+			'blockcraft/pattern-example',
 			array(
 				'title'       => 'Pattern Example',
 				'description' => 'Description of your custom pattern',
-				'categories'  => ['theme-test-category'],
+				'categories'  => ['blockcraft-category'],
 				'content'     => include plugin_dir_path( __DIR__ ) . 'patterns/pattern-example.php',
 			)
 		);

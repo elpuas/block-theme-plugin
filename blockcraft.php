@@ -1,17 +1,17 @@
 <?php
 /**
- * Plugin Name:       Test
- * Plugin URI:        https://github.com/elpuas
- * Description:       Later
+ * Plugin Name:       BlockCraft
+ * Plugin URI:        https://github.com/elpuas/block-theme-plugin
+ * Description:       Enhance your WordPress block editing experience with BlockCraft – your ultimate toolkit for crafting block themes effortlessly. Whether you're a developer, designer, or content creator, BlockCraft empowers you to take full control of the WordPress block editor.
  * Requires at least: 6.1
- * Requires PHP:      7.0
+ * Requires PHP:      8.0
  * Version:           0.1.0
- * Author:            elpuas
+ * Author:            ElPuas Digital Crafts
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       theme-test
+ * Text Domain:       blockcraft
  *
- * @package           elpuasdigitalcrafts
+ * @package           blockcraft
  */
 
 

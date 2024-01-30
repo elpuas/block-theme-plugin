@@ -21,5 +21,5 @@
  */
 
 /* eslint-disable no-console */
-console.log( 'Hello World! (from elpuasdigitalcrafts-theme-test block)' );
+console.log( 'Hello World! (from elpuasdigitalcrafts-blockcraft block)' );
 /* eslint-enable no-console */
