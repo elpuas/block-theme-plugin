@@ -54,8 +54,16 @@
 			"postcss-preset-env": {
 				"stage": 0
 			},
-			"cssnano": {}
-
+			"cssnano": {
+				"preset": [
+					"default",
+					{
+						"discardComments": {
+							"removeAll": true
+						}
+					}
+				]
+			}
 		}
 	}
 }
