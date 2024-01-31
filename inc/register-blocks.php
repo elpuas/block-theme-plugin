@@ -12,8 +12,8 @@ class BlockRegistrar {
 	}
 
 	public function register_blocks() {
-		register_block_type( plugin_dir_path( __DIR__ ) . '/build/block-example' );
-		register_block_type( plugin_dir_path( __DIR__ ) . '/build/block-example-copy' );
+		register_block_type( plugin_dir_path( __DIR__ ) . '/build/blocks/block-example' );
+		register_block_type( plugin_dir_path( __DIR__ ) . '/build/blocks/block-example-copy' );
 	}
 }
 

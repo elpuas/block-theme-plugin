@@ -1,0 +1,21 @@
+body {
+	color: oklch(61% 0.2 29);
+}
+
+p:has(a) {
+	color: var( --wp--preset--color--secondary, #5E6F00 );
+}
+
+p {
+	a {
+		color: var( --wp--preset--color--secondary, #5E6F00 );
+	}
+}
+
+@scope ( .has-background ) {
+	p {
+		a {
+			color: oklch(61% 0.2 29);
+		}
+	}
+}
