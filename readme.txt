@@ -1,55 +1,45 @@
 === Test ===
 Contributors:      elpuas
-Tags:              block
+Tags:              block, theme-json, patterns
 Tested up to:      6.1
 Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Later
+A WordPress plugin for enhancing block-based themes with custom `theme.json` configurations, block patterns, and custom blocks.
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+This plugin offers a suite of tools to enhance block-based themes. It modifies the `theme.json` configuration to adjust theme settings and styles, adds custom block patterns for more layout options, and introduces custom block types for specialized content.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+Perfect for theme developers and users looking to extend the capabilities of their block-based WordPress themes.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload the plugin files to the `/wp-content/plugins/theme-test` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-
+1. Upload the plugin files to the `/wp-content/plugins/blockcraft` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= What changes does this plugin make to `theme.json`? =
 
-An answer to that question.
+This plugin adds custom configurations to `theme.json`, allowing for more control over theme settings and styles.
 
-= What about foo bar? =
+= Can I add my own patterns or block types? =
 
-Answer to foo bar dilemma.
+Yes, the plugin is designed to be extensible, allowing developers to add their own patterns and block types.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Example of modified `theme.json` settings.
+2. Custom block patterns added by the plugin.
+3. Custom blocks in action within the editor.
 
 == Changelog ==
 
 = 0.1.0 =
-* Release
+* Initial release with `theme.json` modifications, custom block patterns, and custom block types.
 
 == Arbitrary section ==
 
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+Feel free to reach out if you have specific needs or ideas for extending the plugin. This plugin is designed to be a foundation for theme customization and enhancement.

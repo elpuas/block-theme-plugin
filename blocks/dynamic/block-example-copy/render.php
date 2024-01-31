@@ -4,5 +4,5 @@
  */
 ?>
 <p <?php echo get_block_wrapper_attributes(); ?>>
-	<?php esc_html_e( 'Test – hello from a dynamic block bitches!', 'theme-test' ); ?>
+	<?php esc_html_e( "Test – I'm Just a Copy!", 'blockcraft' ); ?>
 </p>

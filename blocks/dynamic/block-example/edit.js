@@ -32,7 +32,7 @@ import './editor.scss';
 export default function Edit() {
 	return (
 		<p { ...useBlockProps() }>
-			{ __( 'Test – hello from the editor bitches!', 'theme-test' ) }
+			{ __( "Test – How to code Drunk! - O'Really?", 'blockcraft' ) }
 		</p>
 	);
 }

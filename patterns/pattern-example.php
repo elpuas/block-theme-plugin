@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Pattern Example - Theme Test
- * Slug: theme-test/pattern-example
- * Categories: theme-test-category
+ * Slug: blockcraft/pattern-example
+ * Categories: blockcraft-category
  *
- * @package theme-test
+ * @package blockcraft
  */
 
 return <<<EOD

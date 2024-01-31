@@ -1,5 +1,5 @@
 {
-	"name": "theme-test",
+	"name": "blockcraft",
 	"version": "0.1.0",
 	"description": "Later",
 	"author": "elpuas",
@@ -7,17 +7,63 @@
 	"homepage": "https://github.com/elpuas",
 	"main": "build/index.js",
 	"scripts": {
-		"build": "wp-scripts build --webpack-copy-php",
+		"start:dynamic": "wp-scripts start --webpack-src-dir=blocks/dynamic/ --output-path=build/blocks/ --webpack-copy-php",
+		"start:assets": "wp-scripts start --output-path=build/public/ --webpack-copy-php",
+		"build": "wp-scripts build --output-path=build/public/ && npm run build:dynamic --webpack-copy-php",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
-		"start": "wp-scripts start --webpack-copy-php",
-		"start:dynamic": "wp-scripts start --webpack-src-dir=blocks/dynamic/",
-		"build:dynamic": "wp-scripts build --webpack-src-dir=blocks/dynamic/"
+		"build:dynamic": "wp-scripts build --webpack-src-dir=blocks/dynamic/ --output-path=build/blocks/ --webpack-copy-php"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^27.1.0"
+		"@wordpress/scripts": "^27.1.0",
+		"autoprefixer": "^10.4.17",
+		"cssnano": "^6.0.3",
+		"postcss": "^8.4.33",
+		"postcss-import": "^16.0.0",
+		"postcss-import-ext-glob": "^2.1.1",
+		"postcss-mixins": "^9.0.4",
+		"postcss-nested": "^6.0.1",
+		"postcss-preset-env": "^9.3.0"
+	},
+	"postcss": {
+		"plugins": {
+			"postcss-import-ext-glob": {
+				"exts": [
+					".css",
+					".scss",
+					".sass"
+				]
+			},
+			"postcss-import": {
+				"path": [
+					"node_modules"
+				]
+			},
+			"postcss-nested": {
+				"bubble": [
+					"screen"
+				]
+			},
+			"postcss-mixins": {},
+			"autoprefixer": {
+				"grid": true
+			},
+			"postcss-preset-env": {
+				"stage": 1
+			},
+			"cssnano": {
+				"preset": [
+					"default",
+					{
+						"discardComments": {
+							"removeAll": true
+						}
+					}
+				]
+			}
+		}
 	}
 }
