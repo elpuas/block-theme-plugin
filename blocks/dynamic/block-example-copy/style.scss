@@ -5,8 +5,8 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-elpuasdigitalcrafts-blockcraft {
-	background-color: #21759b;
-	color: #fff;
+.wp-block-elpuasdigitalcrafts-blockcraft-copy {
+	background-color: var( --wp--preset--color--luminous-vivid-orange, #ff6900 );
+	color: var( --wp--preset--color--luminous-vivid-amber, #fcb900 );
 	padding: 2px;
 }

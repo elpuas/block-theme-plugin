@@ -21,7 +21,7 @@ class ThemeJSONHandler {
 	 * Adds an action to apply theme JSON theme filters after the theme is set up.
 	 */
 	public function __construct() {
-		add_action( 'after_setup_theme', [$this, 'apply_theme_json_theme_filters'] );
+		add_action( 'after_setup_theme', [ $this, 'apply_theme_json_theme_filters' ] );
 	}
 
 	/**
@@ -57,6 +57,21 @@ class ThemeJSONHandler {
 							'slug'  => 'contrast',
 							'color' => 'black',
 							'name'  => esc_html_x( 'Contrast', 'blockcraft' ),
+						],
+						[
+							'slug'  => 'primary',
+							'color' => '#D8FF00',
+							'name'  => esc_html_x( 'Primary', 'blockcraft' ),
+						],
+						[
+							'slug'  => 'secondary',
+							'color' => '#5E6F00',
+							'name'  => esc_html_x( 'Secondary', 'blockcraft' ),
+						],
+						[
+							'slug'  => 'tertirary',
+							'color' => '#B6D600',
+							'name'  => esc_html_x( 'Tertiary', 'blockcraft' ),
 						],
 					],
 				],

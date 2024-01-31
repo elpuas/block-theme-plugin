@@ -8,12 +8,12 @@
 class BlockRegistrar {
 
 	public function __construct() {
-		add_action( 'init', [$this, 'register_blocks'] );
+		add_action( 'init', [ $this, 'register_blocks' ] );
 	}
 
 	public function register_blocks() {
-		register_block_type( plugin_dir_path(__DIR__) . '/build/block-example' );
-		register_block_type( plugin_dir_path(__DIR__) . '/build/block-example-copy' );
+		register_block_type( plugin_dir_path( __DIR__ ) . '/build/block-example' );
+		register_block_type( plugin_dir_path( __DIR__ ) . '/build/block-example-copy' );
 	}
 }
 
